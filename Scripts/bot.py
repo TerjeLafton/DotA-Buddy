@@ -48,6 +48,7 @@ async def on_reaction_add(reaction, user):
     # Make sure to only look for reactions not made by the bot
     if str(user).split('#')[0] != bot.user.name:
         print(reaction.me)
+        print(message_id.get())
 
 
 bot.run(TOKEN)
