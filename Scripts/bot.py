@@ -21,10 +21,6 @@ clock_running.set(False)
 message_id = ContextVar('Message ID')
 
 
-def set_message_id(id):
-    message_id.set(id)
-
-
 # Create a on_ready function to say when the bot is ready to go
 @bot.event
 async def on_ready():
